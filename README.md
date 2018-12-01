@@ -1,5 +1,5 @@
-go-ucp
-======
+ucp-smsc-sim
+============
 
 UCP SMSC simulator for testing UCP clients.
 
@@ -15,8 +15,8 @@ Supported operations
 
 Dependencies
 ------------
-* [Go](https://golang.org)
-* [Redis](https://redis.io/)
+* [Go](https://golang.org) 1.11
+* [Redis](https://redis.io/) on localhost:6379
 
 Run
 ---
