@@ -49,7 +49,7 @@ type DeliverNotification struct {
 func NewDeliverNotification(pdu *PDU, AdC, OAdC, SCTS string) *DeliverNotification {
 	tscts, _ := time.Parse("020106150405", SCTS)
 	after2s := tscts.Add(2 * time.Second)
-	msg := []byte("Message for " + AdC + " with identification " + SCTS + " has been delivered at " + after2s.String())
+	msg := []byte("Message for " + OAdC + " with identification " + OAdC + ":" + SCTS + " has been delivered at " + after2s.String())
 	msgIra := make([]byte, hex.EncodedLen(len(msg)))
 	hex.Encode(msgIra, msg)
 	return &DeliverNotification{
