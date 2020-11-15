@@ -13,15 +13,15 @@ Supported operations
 - Delivery Notification
 - Delivery Short Message
 
-Dependencies
-------------
-* [Go](https://golang.org) 1.11
-* [Redis](https://redis.io/) on localhost:6379
+[//]: # "Dependencies"
+[//]: # "------------"
+[//]: # "* [Go](https://golang.org) 1.11"
+[//]: # "* [Redis](https://redis.io/) on localhost:6379"
 
 Run
 ---
 ```
-$ go run main.go
+$ docker-compose up
 ```
 
 Open http://localhost:16003 on your browser
